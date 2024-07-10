@@ -1,0 +1,28 @@
+extends /src/templates/_layouts/default.pug
+block vars
+
+block content
+		.content.landing-page
+			+carousel
+			.container
+				.row.justify-content-center
+					.col-md-5
+						a.card(href="#")
+							img.card-img-top(src="https://images.unsplash.com/photo-1645082215735-465c261c2e06?q=80&w=1354&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="young adult")
+							.card-body.landing-card
+								h5.card-title Feature YA Collections
+					.col-md-5
+						a.card(href="#")
+							img.card-img-top(src="https://images.unsplash.com/photo-1478104718532-efe04cc3ff7f?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="New Arrivals and Recommended Read")
+							.card-body.landing-card
+								h5.card-title New Arrivals and Recommended Reads
+					.col-md-5
+						a.card(href="#")
+							img.card-img-top(src="https://plus.unsplash.com/premium_photo-1687139217001-e6278b83c09f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Upcoming Events and Programs")
+							.card-body.landing-card
+								h5.card-title Upcoming Events and Programs
+					.col-md-5
+						a.card(href="#")
+							img.card-img-top(src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Quick Access Links")
+							.card-body.landing-card
+								h5.card-title Quick Access Links

@@ -1,0 +1,22 @@
+mixin comp-header
+	// header - starts here
+	header.text-bg-light
+		nav.navbar.navbar-expand-lg.bg-body-tertiary
+			.container-fluid
+				a.navbar-brand(href="/")
+					.logo-container
+						include /src/images/icons/slient-library.svg
+				button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+					span.navbar-toggler-icon
+				.collapse.navbar-collapse.justify-content-end(id="navbarNav")
+					ul.navbar-nav
+						li.nav-item
+							a.nav-link(href="") Books List
+						li.nav-item
+							a.nav-link(href="") Events and Promotion
+						li.nav-item
+							a.nav-link(href="") Sitemap
+						li.nav-item
+							a.nav-link(href="") Contact
+						li.nav-item
+							a.nav-link(href="") Privacy Policy

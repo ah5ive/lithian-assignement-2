@@ -1,0 +1,36 @@
+html {
+  @include font-smoothing(on);
+
+  font-size: $font-root-size;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 16px;
+
+    &.caption {
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button, button:focus {
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+
+  }
+}
+

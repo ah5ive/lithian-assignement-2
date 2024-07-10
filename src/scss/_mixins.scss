@@ -1,0 +1,39 @@
+// https://maximilianhoffmann.com/posts/better-font-rendering-on-osx
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+// @include font(21, 24, 20)
+@mixin font($sizeValue: 16, $lineHeight: null, $letterSpacing: null, $isEm: false) {
+  @if type-of($sizeValue) == 'string' {
+    font-size: $sizeValue;
+  }
+
+  @else {
+    font-size: $sizeValue + px;
+
+    @if ($isEm) {
+      font-size: em($sizeValue);
+    }
+
+    @else {
+      font-size: ($sizeValue / 10) + rem;
+    }
+  }
+
+  @if type-of($lineHeight) != null {
+    line-height: $lineHeight;
+  }
+
+  @if type-of($letterSpacing) != null {
+    letter-spacing: $letterSpacing;
+  }
+}

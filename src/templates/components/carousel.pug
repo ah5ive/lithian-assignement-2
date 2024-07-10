@@ -1,0 +1,39 @@
+mixin carousel
+	#hero-section.carousel.slide.mb-6(data-bs-ride='carousel')
+		.carousel-indicators
+			button(type='button', data-bs-target='#hero-section', data-bs-slide-to='0', aria-label='Slide 1')
+			button(type='button', data-bs-target='#hero-section', data-bs-slide-to='1', aria-label='Slide 2', class='active', aria-current='true')
+			button(type='button', data-bs-target='#hero-section', data-bs-slide-to='2', aria-label='Slide 3')
+		.carousel-inner
+			.carousel-item
+				img(src="https://images.pexels.com/photos/1083633/pexels-photo-1083633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+				.container
+					.carousel-caption.text-end
+						h1 Get a good read
+						p.opacity-75 Welcome to Good Reads, where reading isn't just a hobby, it's a passion we share with millions of book lovers worldwide.
+						p
+							a.btn.btn-lg.btn-primary(href='#').mt-4 Learn More
+			.carousel-item
+				img(src="https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+				.container
+					.carousel-caption.text-end
+						h1 Biography Writing Workshop
+						p This workshop invites participants to embark on a journey into the fascinating world of biographical writing.
+						p
+							a.btn.btn-lg.btn-primary(href='#').mt-4  Learn More
+			.carousel-item.active
+				img(src="https://images.pexels.com/photos/1741230/pexels-photo-1741230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+				.container
+					.carousel-caption.text-end
+						h1 Fantasy Fiction Workshop
+						p A Fantasy Fiction Workshop offers enthusiasts an immersive experience into the realms of imagination and storytelling.
+						p
+							a.btn.btn-lg.btn-primary(href='#').mt-4  Learn More
+		button.carousel-control-prev(type='button', data-bs-target='#hero-section', data-bs-slide='prev')
+			span.carousel-control-prev-icon(aria-hidden='true')
+			span.visually-hidden Previous
+		button.carousel-control-next(type='button', data-bs-target='#hero-section', data-bs-slide='next')
+			span.carousel-control-next-icon(aria-hidden='true')
+			span.visually-hidden Next
+
+				span.visually-hidden Next

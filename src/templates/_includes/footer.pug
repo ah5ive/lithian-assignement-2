@@ -1,0 +1,63 @@
+mixin comp-footer
+	// footer
+	footer.footer.bg-dark.text-white.pt-4.pb-4
+		.container
+			.row
+				.col-md-3
+					h5 Contact Information
+					ul.list-unstyled
+						li
+							i.fa.fa-map-marker-alt.mr-2
+							|&nbsp;123 victoria street s123567
+						li
+							i.fa.fa-phone-alt.mr-2
+							|&nbsp;+65 456 7890
+						li
+							i.fa.fa-envelope.mr-2 &nbsp;
+							a.text-white(href='mailto:info@silentlibrary.com') info@silentlibrary.com
+				.col-md-3
+					h5 Quick Links
+					ul.list-unstyled
+						li
+							a.text-white(href='/privacy-policy') Privacy Policy
+						li
+							a.text-white(href='/terms-of-use') Terms of Use
+						li
+							a.text-white(href='/faqs') FAQs
+						li
+							a.text-white(href='/site-map') Site Map
+				.col-md-3
+					h5 Social Media
+					ul.list-unstyled
+						li
+							a.text-white(href='https://facebook.com/library' target='_blank')
+								i.fa.fa-facebook.mr-2 &nbsp;
+								| Facebook
+						li
+							a.text-white(href='https://twitter.com/library' target='_blank')
+								i.fa.fa-twitter.mr-2 &nbsp;
+								| Twitter
+						li
+							a.text-white(href='https://instagram.com/library' target='_blank')
+								i.fa.fa-instagram.mr-2 &nbsp;
+								| Instagram
+						li
+							a.text-white(href='https://linkedin.com/library' target='_blank')
+								i.fa.fa-linkedin.mr-2 &nbsp;
+								| LinkedIn
+				.col-md-3
+					h5.mb-3 Newsletter Signup
+					form(action='/subscribe' method='post')
+						.input-group.mb-3
+							input.form-control(type='email' placeholder='Your email' name='email' required)
+							button.btn.btn-primary(type='submit') Subscribe
+			.row.mt-4
+				.col-md-6
+					h6 Hours of Operation
+					p Mon - Fri: 9:00 AM - 6:00 PM<br/>Sat: 10:00 AM - 4:00 PM<br/>Sun: Closed
+				.col-md-6.text-md-end
+					p.mb-0 &copy; 2024 Library. All Rights Reserved.
+					p.mb-0
+						a.text-white(href='/terms-of-use') Terms of Use
+					p.mb-0
+						a.text-white(href='/privacy-policy') Privacy Policy

@@ -1,0 +1,121 @@
+extends /src/templates/_layouts/default.pug
+block vars
+
+block content
+		.content.landing-page
+			.container
+				.row
+					.col-12
+						.section-navi
+							h2 Category Listing
+				.row.justify-content-center
+					.col-12
+						.card.category-list
+							h4.title YA Collections
+							.row
+								.col-md-3
+									a.feature-card(href="#")
+										.feature-image
+											img(src="https://picsum.photos/id/343/300/200")
+										.feature-title
+											p.caption Feature
+											each book, index in young_adults
+												if index === 0
+													h6 !{book.title}
+								.col-md-9
+									ul.row.mt-2.mt-md-0
+										each book in young_adults
+											li.col-md-3
+												a(href="#")
+													p.text-truncate.mb-2 !{book.title}
+							.learn-more
+								a(href="")
+									button Learn More
+					.col-12
+						.card.category-list
+							h4.title Graphic novels
+							.row
+								.col-md-3
+									a.feature-card(href="#")
+										.feature-image
+											img(src="https://picsum.photos/id/154/300/200")
+										.feature-title
+											p.caption Feature
+											each book, index in graphic_novels
+												if index === 0
+													h6 !{book.title}
+								.col-md-9
+									ul.row.mt-2.mt-md-0
+										each book in graphic_novels
+											li.col-md-3
+												a(href="#")
+													p.text-truncate.mb-2 !{book.title}
+							.learn-more
+								a(href="")
+									button Learn More
+					.col-12
+						.card.category-list
+							h4.title Non-fiction
+							.row
+								.col-md-3
+									a.feature-card(href="#")
+										.feature-image
+											img(src="https://picsum.photos/id/222/300/200")
+										.feature-title
+											p.caption Feature
+											each book, index in non_fiction
+												if index === 0
+													h6 !{book.title}
+								.col-md-9
+									ul.row.mt-2.mt-md-0
+										each book in non_fiction
+											li.col-md-3
+												a(href="#")
+													p.text-truncate.mb-2 !{book.title}
+							.learn-more
+								a(href="")
+									button Learn More
+					.col-12
+						.card.category-list
+							h4.title Large Prints
+							.row
+								.col-md-3
+									a.feature-card(href="#")
+										.feature-image
+											img(src="https://picsum.photos/id/132/300/200")
+										.feature-title
+											p.caption Feature
+											each book, index in large_print
+												if index === 0
+													h6 !{book.title}
+								.col-md-9
+									ul.row.mt-2.mt-md-0
+										each book in large_print
+											li.col-md-3
+												a(href="#")
+													p.text-truncate.mb-2 !{book.title}
+							.learn-more
+								a(href="")
+									button Learn More
+					.col-12
+						.card.category-list
+							h4.title Audio Books
+							.row
+								.col-md-3
+									a.feature-card(href="#")
+										.feature-image
+											img(src="https://picsum.photos/id/123/300/200")
+										.feature-title
+											p.caption Feature
+											each book, index in audio_books
+												if index === 0
+													h6 !{book.title}
+								.col-md-9
+									ul.row.mt-2.mt-md-0
+										each book in audio_books
+											li.col-md-3
+												a(href="#")
+													p.text-truncate.mb-2 !{book.title}
+							.learn-more
+								a(href="")
+									button Learn More

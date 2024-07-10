@@ -1,0 +1,14 @@
+.carousel {
+	margin-bottom: 40px;
+	.carousel-inner {
+			.carousel-item {
+				width: 100%;
+				height: 400px;
+				img {
+					object-position: center;
+					object-fit: cover;
+					width: 100%;
+				}
+			}
+		}
+}

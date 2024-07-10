@@ -1,0 +1,165 @@
+nav {
+	z-index: 10;
+}
+
+.btn-primary {
+	background-color: $bs-btn-hover-bg;
+	border-color: $bs-btn-hover-border;
+
+	&:hover {
+		background-color: $purple-blue-500;
+		border-color: $purple-blue-500;
+	}
+
+	&:focus-visible {
+		background-color: $purple-blue-900;
+		border-color: $purple-blue-900;
+	}
+}
+
+.content {
+	min-height: 61vh;
+	background-color: $brand;
+}
+
+.card {
+	position: relative;
+	background: none;
+	border: none;
+	padding-bottom:56px;
+
+	.card-img-top {
+		aspect-ratio: 3/2;
+		object-fit: cover;
+	}
+
+	.card-body {
+		&.landing-card {
+			border-top-left-radius: 4px;
+			position: absolute;
+			overflow: hidden;
+			padding: 8px;
+			left: 0;
+			top: 0;
+			background-color: $green-500;
+			.card-title {
+				color:white;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&.category-list {
+		// max-height: 260px;
+		padding: 24px;
+		background-color: $purple-blue-500;
+		margin-bottom: 14px;
+		.title {
+			color: white;
+			font-weight: 600;
+			padding-bottom: 16px;
+		}
+
+		.feature-card {
+			position: relative;
+			overflow: hidden;
+			border-radius: 4px;
+			.feature-title {
+				border-radius: 4px;
+				display: block;
+				color: black;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+				// background-color:
+				h6 {
+					padding-bottom: 8px;
+					padding-top: 8px;
+					padding-left: 8px;
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 1;
+				}
+
+				p {
+					&.caption {
+						border-top-left-radius: 2px;
+						display: inline;
+						background: $blue-500;
+						padding: 6px 4px;
+						color: white;
+						line-height: 1;
+					}
+				}
+			}
+
+			.feature-image {
+				background-color: aqua;
+				position: relative;
+				border-radius: 4px;
+				aspect-ratio: 3/2;
+				overflow: hidden;
+				img {
+					border-radius: 4px;
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+			width: 100%;
+			li {
+				margin-right: 8px;
+				a {
+					color: white;
+				}
+			}
+
+		}
+		.learn-more {
+			position: absolute;
+			bottom: 16px;
+			right: 16px;
+
+			a {
+				color: white;
+			}
+
+			button {
+				background-color: $brand;
+				border-radius: 4px;
+				padding: 4px 16px;
+				font-weight: 600;
+
+				&:hover, &:focus {
+					background-color: $green-500;
+				}
+			}
+		}
+	}
+}
+
+.section-navi {
+	padding-bottom: 60px;
+	h2 {
+		font-weight: bold;
+		font-size: 45px;
+	}
+}
+// youth adults
+// https://unsplash.com/photos/a-bunch-of-items-that-are-on-display-AncnK3CyWYE
+
+// new arrivals
+// https://images.unsplash.com/photo-1478104718532-efe04cc3ff7f?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
+// activities
+// https://plus.unsplash.com/premium_photo-1687139217001-e6278b83c09f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
+// quick links
+// https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
